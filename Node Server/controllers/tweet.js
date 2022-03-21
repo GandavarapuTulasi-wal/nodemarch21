@@ -3,7 +3,7 @@ let tweets = [
   {
     title: 'Tweet1',
     body: 'This is my tweet',
-    doc: '20-12-2022',
+    date_of_creation: '2022-03-26',
     author: 'Smiley',
     category: 'entertainment',
   },
