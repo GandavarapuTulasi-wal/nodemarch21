@@ -1,13 +1,5 @@
 const { body, validationResult } = require('express-validator');
-let tweets = [
-  {
-    title: 'Tweet1',
-    body: 'This is my tweet',
-    date_of_creation: '2022-03-26',
-    author: 'Smiley',
-    category: 'entertainment',
-  },
-];
+let tweets = [];
 function getTweets(req, res) {
   res.json(tweets);
 }
@@ -57,6 +49,7 @@ function deleteTweet(req, res) {
 }
 function deleteAll(req, res) {
   tweets = [];
-  res.json(' delete all');
+  console.log(tweets);
+  res.json({ status: 'Successfully deleted Todos' });
 }
 module.exports = { getTweets, createTweet, deleteTweet, deleteAll };

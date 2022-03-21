@@ -34,7 +34,7 @@ function Tweet() {
         console.log(error);
       });
   };
-  const deleteTodo = (indexToDelete) => {
+  const deleteTweet = (indexToDelete) => {
     axios
       .delete('/tweets/' + indexToDelete)
       .then((res) => {
@@ -111,7 +111,7 @@ function Tweet() {
             <button
               className="delete"
               onClick={() => {
-                deleteTodo(index);
+                deleteTweet(index);
               }}
             >
               Delete
