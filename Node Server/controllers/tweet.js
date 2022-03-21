@@ -39,7 +39,7 @@ const createTweet = [
       let { title, body, date_of_creation, author, category } = req.body;
       console.log(req.body);
       tweets.push({ title, body, date_of_creation, author, category });
-      res.json({ status: 'adding tweet complete' });
+      res.json({ status: 'Successfully Added tweet ' });
     }
   },
 ];
